@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Insta Followers</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .container h2 {
+            margin: 0;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+
+        .container img {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        input {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        select {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        button {
+            background: linear-gradient(to right, #ff512f, #f09819);
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(255, 105, 135, 0.5);
+        }
+        button a {
+            color: #ddd;
+            font-size: 1.2rem;
+            border: none;
+        }
+
+        footer {
+            margin-top: 15px;
+            font-size: 0.8rem;
+            color: #ddd;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Instagram Icon -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Icon">
+
+        <!-- Heading -->
+        <h2>Free Insta Followers</h2>
+
+        <!-- Input for Instagram ID -->
+        <label for="numberInput">Enter Your Insta ID:</label>
+        <input type="text" id="numberInput" name="numberInput" placeholder="Your Instagram ID">
+
+        <!-- Dropdown for Selecting Followers -->
+        <label for="selectOption">Select Followers:</label>
+        <select id="selectOption" name="selectOption">
+            <option value="" disabled selected>Select Followers</option>
+            <option value="1k">1K Followers</option>
+            <option value="3k">3K Followers</option>
+            <option value="5k">5K Followers</option>
+            <option value="10k">10K Followers</option>
+            <option value="20k">20K Followers</option>
+        </select>
+
+        <!-- Verify Button -->
+        <button  onclick="redeemNow()"><a href="css.html">Verify Now</a></button>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 Insta Followers. All rights reserved. | <a href="#">Terms & Conditions</a></p>
+        </footer>
+    </div>
+
+    <script>
+        function redeemNow() {
+            var instaId = document.getElementById("numberInput").value.trim();
+            var followers = document.getElementById("selectOption").value;
+
+            if (instaId === "" || followers === "") {
+                alert("Please enter your Instagram ID and select followers.");
+                return;
+            }
+
+            // Redirect to the verification page
+        
+        }
+    </script>
+</body>
+</html>

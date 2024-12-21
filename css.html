@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WINZO Offers - Get Followers</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Header Section */
+    .header {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(to right, #ff512f, #dd2476);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .header h1 {
+      font-size: 3em;
+      margin: 0;
+      text-transform: uppercase;
+      font-weight: 700;
+      animation: color-animation 5s infinite alternate;
+    }
+
+    .header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+
+    @keyframes color-animation {
+      from { color: #ff9a9e; }
+      to { color: #fbc2eb; }
+    }
+
+    /* Offer Section */
+    .offer-section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      color: #333;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .offer-icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .offer-details {
+      flex: 1;
+    }
+
+    .offer-title {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .offer-description {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+
+    .offer-link {
+      padding: 12px 20px;
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: inline-block;
+    }
+
+    .offer-link:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(255, 105, 135, 0.5);
+    }
+
+    /* YouTube Section */
+    .youtube-section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .youtube-section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    iframe {
+      width: 90%;
+      max-width: 800px;
+      height: 450px;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer Section */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #bbb;
+      font-size: 0.9em;
+    }
+
+    .footer a {
+      color: #ff9a9e;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <h1>Verify WINZO App Offers</h1>
+    <p>Exclusive opportunity to gain followers and rewards!</p>
+  </div>
+
+  <!-- Offer Section -->
+  <div class="offer-section" id="offer-container">
+    <img src="" alt="Offer Icon" class="offer-icon" id="offer-icon">
+    <div class="offer-details">
+      <div class="offer-title" id="offer-title"></div>
+      <div class="offer-description" id="offer-description"></div>
+      <a href="#" target="_blank" class="offer-link" id="offer-link">Open</a>
+    </div>
+  </div>
+
+  <!-- YouTube Section -->
+  <div class="youtube-section">
+    <h2>Watch How To Use WINZO</h2>
+    <iframe 
+      id="youtube-video" 
+      src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2024 WINZO Offers. All rights reserved. | <a href="#">Privacy Policy</a>
+  </div>
+
+  <script>
+    var liveOffers = [
+      {
+        "id": "53211238",
+        "name": "Winzo - Finance Survey",
+        "anchor": "Install Winzo, signup & Play Games",
+        "conversion": "Create Fresh Account",
+        "category_id": "3",
+        "network_icon": "https://play-lh.googleusercontent.com/sO9TLOabPNbdV6B8rGVsX2HcUOLbXdMOATTNOpTSPAOnzjOubytCGljW-SBCgVbtqL4T",
+        "user_payout": "0.08",
+        "payout": "0.08",
+        "user_enabled": "2",
+        "url": "https://winzo.onelink.me/gu8K/voj6gnbn"
+      }
+    ];
+
+    // Populate offer details
+    var offer = liveOffers[0];
+    document.getElementById("offer-icon").src = offer.network_icon;
+    document.getElementById("offer-title").textContent = offer.name;
+    document.getElementById("offer-description").textContent = offer.anchor;
+    document.getElementById("offer-link").href = offer.url;
+
+    // Set YouTube video URL
+    var youtubeVideoId = "dQw4w9WgXcQ"; // Replace with your YouTube video ID
+    document.getElementById("youtube-video").src = "https://www.youtube.com/embed/" + youtubeVideoId;
+  </script>
+</body>
+</html>
